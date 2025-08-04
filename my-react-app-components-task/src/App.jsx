@@ -1,16 +1,19 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import TaskForm from "./components/TaskForm";
-import TaskList from "./components/TaskList";
+import TaskItem from "./components/TaskItem";
 
 
 function App() {
   return (
     <div className="todoapp">
-      <Header/>
+      <h1>Задачи</h1>
       <section>
-          <TaskForm/>
-          <TaskList/>
+        <TaskForm/>
+        <ul className="todo-list">
+          <TaskItem/>
+          <TaskItem/>
+          <TaskItem/>
+        </ul>
           <Footer/>
       </section>
     </div>
